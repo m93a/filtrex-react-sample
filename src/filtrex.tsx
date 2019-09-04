@@ -1,7 +1,7 @@
 import { compileExpression } from "@m93a/filtrex";
 import React from "react";
 
-type evt = React.ChangeEvent<HTMLInputElement>;
+type evt = React.ChangeEvent<HTMLTextAreaElement>;
 
 export class Filtrex extends React.Component
 {
@@ -15,8 +15,8 @@ export class Filtrex extends React.Component
     public render()
     {
         return <>
-            <input placeholder="Enter JSON..." onChange={this.jsonChanged} /> <br/>
-            <input placeholder="Enter filtrex..." onChange={this.filtrexChanged} /> <br/>
+            <textarea placeholder="Enter JSON..." onChange={this.jsonChanged} /> <br/>
+            <textarea placeholder="Enter filtrex..." onChange={this.filtrexChanged} /> <br/>
             <p>JSON Error: {this.jsonError}</p>
             <p>Filtrex Error: {this.exprError}</p>
             <p>Evaluation Error: {this.evalError}</p>
@@ -33,7 +33,7 @@ export class Filtrex extends React.Component
 
     private filtrexChanged = (evt: evt) =>
     {
-        try { this.expr = compileExpression(evt.target.value, {}); this.exprError = ''; }
+        try { this.expr = compileExpression(evt.target.value); this.exprError = ''; }
         catch (err) { this.exprError = ''+err; }
         finally { this.update(); }
     }

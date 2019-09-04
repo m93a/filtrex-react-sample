@@ -997,10 +997,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
-"@m93a/filtrex@^2.1.0-beta2":
-  version "2.1.0-beta2"
-  resolved "https://registry.yarnpkg.com/@m93a/filtrex/-/filtrex-2.1.0-beta2.tgz#e52d9692e6e9ab2702f723620a03f15123747744"
-  integrity sha512-U1jbe6uhjXQilG/h4dnxcNwqybZFz9wZO92gL6Ayyjnip7q2zdW68zBveitiJal9VZq5lX8QRYZqegMs4dvejA==
+"@m93a/filtrex@^2.1.0-beta3":
+  version "2.1.0-beta3"
+  resolved "https://registry.yarnpkg.com/@m93a/filtrex/-/filtrex-2.1.0-beta3.tgz#0caaeac0df7fcfc01fdce4b702501ea6ebb4a235"
+  integrity sha512-ThcWjMS3K6nXcvZ8idolvZoMwzz0jmMA88YutmQxZCxRMGbfCfNePLo4GYAOPkcv8g0Vs17V2wV5vwtXdKD0oQ==
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
